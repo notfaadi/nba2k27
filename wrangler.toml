@@ -9,13 +9,10 @@ compatibility_date = "2026-09-12"
 [build]
 command = "npm run build"
 
-[[routes]]
-pattern = "localhost:5174"
-custom_domain = true
-
-[[routes]]
-pattern = "www.localhost:5174"
-custom_domain = true
+# Serve on *.workers.dev until you attach a real zone in the dashboard
+# (Workers & Pages → nba2k27 → Settings → Domains & Routes).
+# Do not put localhost or unproxied hostnames in [[routes]] — deploy will fail.
+workers_dev = true
 
 [assets]
 directory = "./dist"
