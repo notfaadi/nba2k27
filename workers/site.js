@@ -35,29 +35,42 @@ function withHtmlCharset(response) {
   })
 }
 
-/** Prefer apex: https://www.example.com/path → https://example.com/path */
-function toApexUrl(url) {
+/** 301 www → apex (preserve path + query). */
+function toApexUrl(url, canonicalHost) {
   const host = url.hostname.toLowerCase()
-  if (!host.startsWith('www.')) return null
+  const apex = canonicalHost.toLowerCase()
+  if (host === apex) return null
+  if (host !== `www.${apex}`) return null
   const next = new URL(url.toString())
-  next.hostname = host.slice(4)
+  next.hostname = apex
   next.protocol = 'https:'
   return next
+}
+
+function redirect301(location) {
+  return new Response(null, {
+    status: 301,
+    headers: {
+      Location: location,
+      'Cache-Control': 'public, max-age=86400',
+    },
+  })
 }
 
 export default {
   async fetch(request, env) {
     const url = new URL(request.url)
+    const canonicalHost = env.CANONICAL_HOST || 'nba2k27hack.org'
 
     if (url.protocol === 'http:') {
       url.protocol = 'https:'
-      const apex = toApexUrl(url)
-      return Response.redirect((apex || url).toString(), 301)
+      const apex = toApexUrl(url, canonicalHost)
+      return redirect301((apex || url).toString())
     }
 
-    const apex = toApexUrl(url)
+    const apex = toApexUrl(url, canonicalHost)
     if (apex) {
-      return Response.redirect(apex.toString(), 301)
+      return redirect301(apex.toString())
     }
 
     const assetResponse = await assetsFetch(env, request, url.pathname + url.search)

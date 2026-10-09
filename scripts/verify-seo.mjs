@@ -336,8 +336,12 @@ if (!redirects.includes('/nba2k27-cheats')) {
 }
 
 const worker = readFileSync(join(root, 'workers', 'site.js'), 'utf8')
-if (!worker.includes("startsWith('www.')") && !worker.includes('startsWith("www.")')) {
-  fail('workers/site.js must detect www. hostnames for apex redirect')
+const hasWwwRedirect =
+  worker.includes('www.${apex}') ||
+  worker.includes("startsWith('www.')") ||
+  worker.includes('startsWith("www.")')
+if (!hasWwwRedirect) {
+  fail('workers/site.js must detect www hostnames for apex redirect')
 }
 if (!worker.includes('301')) {
   fail('workers/site.js must 301 www → apex for a single canonical host')
