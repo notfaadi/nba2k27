@@ -34,13 +34,6 @@
 /nba2k27-cheat     /nba2k27-cheats   301
 /nba2k27-cheat/    /nba2k27-cheats   301
 /nba2k27-cheats  /nba2k27-cheats   301
-/nba2k27-cheats/ /nba2k27-cheats   301
-/nba2k27-cheat   /nba2k27-cheats   301
-/nba2k27-cheat/  /nba2k27-cheats   301
-/nba2k27-hacks   /nba2k27-cheats   301
-/nba2k27-hacks/  /nba2k27-cheats   301
-/nba2k27-hack    /nba2k27-cheats   301
-/nba2k27-hack/   /nba2k27-cheats   301
 /cheats-nba2k27    /nba2k27-cheats   301
 /cheats-nba2k27/   /nba2k27-cheats   301
 /hacks-nba2k27     /nba2k27-cheats   301
@@ -55,8 +48,6 @@
 /nba2k27-player-highlight/ /nba2k27-cheats   301
 /nba2k27-radar     /nba2k27-cheats   301
 /nba2k27-radar/    /nba2k27-cheats   301
-/nba2k27-radar  /nba2k27-cheats 301
-/nba2k27-radar/ /nba2k27-cheats 301
 /nba2k27-spoofer   /nba2k27-cheats   301
 /nba2k27-spoofer/  /nba2k27-cheats   301
 /undetected-nba2k27-cheats  /nba2k27-cheats   301
@@ -94,44 +85,19 @@
 /forums/loot-run      /forums/mycareer-play-guide    301
 
 # Legacy NBA 2K27 slugs → NBA 2K27 product (rebrand)
-/nba2k27-cheats   /nba2k27-cheats   301
-/nba2k27-cheats/  /nba2k27-cheats   301
-/nba2k27-cheats      /nba2k27-cheats   301
-/nba2k27-cheats/     /nba2k27-cheats   301
 /escape-from-nba2k27-cheats   /nba2k27-cheats   301
 /escape-from-nba2k27-cheats/  /nba2k27-cheats   301
-/nba2k27-hacks   /nba2k27-cheats   301
-/nba2k27-hacks/  /nba2k27-cheats   301
-/nba2k27-hacks      /nba2k27-cheats   301
-/nba2k27-hacks/     /nba2k27-cheats   301
 /escape-from-nba2k27-hacks  /nba2k27-cheats   301
 /escape-from-nba2k27-hacks/ /nba2k27-cheats   301
 /nba2k27-aimbot  /nba2k27-cheats   301
 /nba2k27-esp     /nba2k27-cheats   301
 /nba2k27-wallhack /nba2k27-cheats  301
-/nba2k27-radar   /nba2k27-cheats   301
-/nba2k27-aimbot     /nba2k27-cheats   301
-/nba2k27-esp        /nba2k27-cheats   301
-/nba2k27-wallhack   /nba2k27-cheats   301
-/buy-nba2k27-cheats  /   301
-/buy-nba2k27-cheats/ /   301
-/buy-nba2k27-cheats     /   301
-/buy-nba2k27-cheats/    /   301
 
 # Legacy Warzone slugs → NBA 2K27 product (older rebrand)
-/nba2k27-cheats  /nba2k27-cheats   301
-/nba2k27-cheats/ /nba2k27-cheats   301
-/nba2k27-hacks   /nba2k27-cheats   301
-/nba2k27-hacks/  /nba2k27-cheats   301
-/nba2k27-aimbot  /nba2k27-cheats   301
-/nba2k27-esp     /nba2k27-cheats   301
-/nba2k27-wallhack /nba2k27-cheats  301
 /isle-cheats     /nba2k27-cheats   301
 /isle-cheats/    /nba2k27-cheats   301
 /wardogs-hacks   /nba2k27-cheats   301
 /wardogs-hacks/  /nba2k27-cheats   301
-/buy-nba2k27-cheats  /   301
-/buy-nba2k27-cheats/ /   301
 
 # Legacy forum slugs
 /forums/ricochet-status   /forums/anti-cheat-status   301
@@ -167,3 +133,4 @@
 /sitemap-index.xml     /sitemap.xml  301
 /sitemap_index.xml     /sitemap.xml  301
 /sitemap.xml/          /sitemap.xml  301
+
