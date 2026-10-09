@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import { HubSectionPage } from '../views/HubSectionPage'
+import { getHubSection, HUB_LAST_UPDATED } from '../data/hub-sections'
+import { PAGE_OG } from '../data/og'
+import { SITE_URL, type PageSeo } from '../data/site'
+
+interface Props {
+  slug: string
+}
+
+const { slug } = Astro.props
+const section = getHubSection(slug)
+
+if (!section) {
+  return Astro.redirect('/404')
+}
+
+const seo: PageSeo = {
+  title: section.title,
+  description: section.description,
+  path: section.path,
+  keywords: section.keywords.join(', '),
+  image: PAGE_OG.home,
+  imageAlt: section.title,
+  ogType: 'website',
+  articlePublishedTime: HUB_LAST_UPDATED,
+  articleSection: 'NBA 2K27 Guides',
+  articleTags: section.keywords,
+}
+
+const jsonLdExtra = [
+  {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
+      { '@type': 'ListItem', position: 2, name: section.h1, item: `${SITE_URL}${section.path}` },
+    ],
+  },
+]
+---
+
+<BaseLayout seo={seo} jsonLdExtra={jsonLdExtra}>
+  <HubSectionPage client:idle slug={slug} />
+</BaseLayout>

@@ -1,0 +1,163 @@
+# Cloudflare Workers/Pages redirects (static files always win over these rules).
+# Host www/HTTP → HTTPS apex is handled by workers/site.js (not_found_handling serves 404.html).
+
+# Trailing-slash canonicalization
+/nba2k27-cheats/   /nba2k27-cheats   301
+/forums/        /forums        301
+/reviews/       /reviews       301
+/faq/           /faq           301
+/support/       /support       301
+/privacy/       /privacy       301
+/terms/         /terms         301
+/refunds/       /refunds       301
+/refund/        /refunds       301
+/refund-policy  /refunds       301
+/refund-policy/ /refunds       301
+/privacy-policy /privacy       301
+/privacy-policy/ /privacy      301
+/terms-of-use   /terms         301
+/terms-of-use/  /terms         301
+/terms-of-service /terms       301
+/terms-of-service/ /terms      301
+
+# Primary SEO keyword variants → product or home
+/nba2k27-hacks     /nba2k27-cheats   301
+/nba2k27-hacks/    /nba2k27-cheats   301
+/nba2k27-hack      /nba2k27-cheats   301
+/nba2k27-hack/     /nba2k27-cheats   301
+/nba2k27-cheat     /nba2k27-cheats   301
+/nba2k27-cheat/    /nba2k27-cheats   301
+/nba2k27-cheats  /nba2k27-cheats   301
+/nba2k27-cheats/ /nba2k27-cheats   301
+/nba2k27-cheat   /nba2k27-cheats   301
+/nba2k27-cheat/  /nba2k27-cheats   301
+/nba2k27-hacks   /nba2k27-cheats   301
+/nba2k27-hacks/  /nba2k27-cheats   301
+/nba2k27-hack    /nba2k27-cheats   301
+/nba2k27-hack/   /nba2k27-cheats   301
+/cheats-nba2k27    /nba2k27-cheats   301
+/cheats-nba2k27/   /nba2k27-cheats   301
+/hacks-nba2k27     /nba2k27-cheats   301
+/hacks-nba2k27/    /nba2k27-cheats   301
+/nba2k27-auto-green    /nba2k27-cheats   301
+/nba2k27-auto-green/   /nba2k27-cheats   301
+/nba2k27-court-vision       /nba2k27-cheats   301
+/nba2k27-court-vision/      /nba2k27-cheats   301
+/nba2k27-myteam-esp  /nba2k27-cheats   301
+/nba2k27-myteam-esp/ /nba2k27-cheats   301
+/nba2k27-player-highlight  /nba2k27-cheats   301
+/nba2k27-player-highlight/ /nba2k27-cheats   301
+/nba2k27-radar     /nba2k27-cheats   301
+/nba2k27-radar/    /nba2k27-cheats   301
+/nba2k27-radar  /nba2k27-cheats 301
+/nba2k27-radar/ /nba2k27-cheats 301
+/nba2k27-spoofer   /nba2k27-cheats   301
+/nba2k27-spoofer/  /nba2k27-cheats   301
+/undetected-nba2k27-cheats  /nba2k27-cheats   301
+/undetected-nba2k27-cheats/ /nba2k27-cheats   301
+/undetected-nba2k27-hacks   /nba2k27-cheats   301
+/undetected-nba2k27-hacks/  /nba2k27-cheats   301
+/battleye-nba2k27-cheats    /nba2k27-cheats   301
+/battleye-nba2k27-cheats/   /nba2k27-cheats   301
+/buy-nba2k27-cheats   /   301
+/buy-nba2k27-cheats/  /   301
+/buy-nba2k27-hacks    /   301
+/buy-nba2k27-hacks/   /   301
+/guides         /forums        301
+/guides/        /forums        301
+/features-list  /forums/features-list  301
+/setup          /forums/complete-setup 301
+/nba2k27-setup     /forums/complete-setup 301
+/nba2k27-cheats-setup /forums/complete-setup 301
+
+# Forum short-slug aliases
+/forums/setup         /forums/complete-setup     301
+/forums/features      /forums/features-list      301
+/forums/aimbot        /forums/auto-green-settings    301
+/forums/esp           /forums/court-vision-guide 301
+/forums/wallhack      /forums/court-vision-guide 301
+/forums/radar         /forums/court-radar-guide   301
+/forums/antivirus     /forums/disable-antivirus  301
+/forums/defender      /forums/disable-antivirus  301
+/forums/windows       /forums/windows-setup      301
+/forums/stream-proof  /forums/stream-proof-setup 301
+/forums/battleye      /forums/anti-cheat-status    301
+/forums/undetected    /forums/undetected-status  301
+/forums/loader        /forums/loader-errors      301
+/forums/survival      /forums/mycareer-play-guide    301
+/forums/loot-run      /forums/mycareer-play-guide    301
+
+# Legacy NBA 2K27 slugs → NBA 2K27 product (rebrand)
+/nba2k27-cheats   /nba2k27-cheats   301
+/nba2k27-cheats/  /nba2k27-cheats   301
+/nba2k27-cheats      /nba2k27-cheats   301
+/nba2k27-cheats/     /nba2k27-cheats   301
+/escape-from-nba2k27-cheats   /nba2k27-cheats   301
+/escape-from-nba2k27-cheats/  /nba2k27-cheats   301
+/nba2k27-hacks   /nba2k27-cheats   301
+/nba2k27-hacks/  /nba2k27-cheats   301
+/nba2k27-hacks      /nba2k27-cheats   301
+/nba2k27-hacks/     /nba2k27-cheats   301
+/escape-from-nba2k27-hacks  /nba2k27-cheats   301
+/escape-from-nba2k27-hacks/ /nba2k27-cheats   301
+/nba2k27-aimbot  /nba2k27-cheats   301
+/nba2k27-esp     /nba2k27-cheats   301
+/nba2k27-wallhack /nba2k27-cheats  301
+/nba2k27-radar   /nba2k27-cheats   301
+/nba2k27-aimbot     /nba2k27-cheats   301
+/nba2k27-esp        /nba2k27-cheats   301
+/nba2k27-wallhack   /nba2k27-cheats   301
+/buy-nba2k27-cheats  /   301
+/buy-nba2k27-cheats/ /   301
+/buy-nba2k27-cheats     /   301
+/buy-nba2k27-cheats/    /   301
+
+# Legacy Warzone slugs → NBA 2K27 product (older rebrand)
+/nba2k27-cheats  /nba2k27-cheats   301
+/nba2k27-cheats/ /nba2k27-cheats   301
+/nba2k27-hacks   /nba2k27-cheats   301
+/nba2k27-hacks/  /nba2k27-cheats   301
+/nba2k27-aimbot  /nba2k27-cheats   301
+/nba2k27-esp     /nba2k27-cheats   301
+/nba2k27-wallhack /nba2k27-cheats  301
+/isle-cheats     /nba2k27-cheats   301
+/isle-cheats/    /nba2k27-cheats   301
+/wardogs-hacks   /nba2k27-cheats   301
+/wardogs-hacks/  /nba2k27-cheats   301
+/buy-nba2k27-cheats  /   301
+/buy-nba2k27-cheats/ /   301
+
+# Legacy forum slugs
+/forums/ricochet-status   /forums/anti-cheat-status   301
+/forums/ricochet-status/  /forums/anti-cheat-status   301
+/forums/ranked-play-guide /forums/mycareer-play-guide   301
+/forums/ranked-play-guide/ /forums/mycareer-play-guide  301
+/forums/loot-run-guide    /forums/mycareer-play-guide   301
+/forums/loot-run-guide/   /forums/mycareer-play-guide   301
+/forums/survival-guide    /forums/mycareer-play-guide   301
+/forums/survival-guide/   /forums/mycareer-play-guide   301
+
+# Legacy slugs → forums
+/articles       /forums        301
+/articles/      /forums        301
+/articles/*     /forums        301
+/blog/instructions       /forums/complete-setup#quick-checklist  301
+/blog/how-to-load        /forums/complete-setup#load-order       301
+/forums/instructions     /forums/complete-setup#quick-checklist  301
+/forums/instructions/    /forums/complete-setup#quick-checklist  301
+/forums/how-to-load      /forums/complete-setup#load-order       301
+/forums/how-to-load/     /forums/complete-setup#load-order       301
+/blog/:slug/    /forums/:slug  301
+/blog/:slug     /forums/:slug  301
+/forums/:slug/  /forums/:slug  301
+
+# Legacy / alternate sitemap URLs → single canonical sitemap
+/sitemap-pages.xml     /sitemap.xml  301
+/sitemap-products.xml  /sitemap.xml  301
+/sitemap-forums.xml    /sitemap.xml  301
+/sitemap-images.xml    /sitemap.xml  301
+/sitemap-blogs.xml     /sitemap.xml  301
+/sitemap-regions.xml   /sitemap.xml  301
+/sitemap-index.xml     /sitemap.xml  301
+/sitemap_index.xml     /sitemap.xml  301
+/sitemap.xml/          /sitemap.xml  301
