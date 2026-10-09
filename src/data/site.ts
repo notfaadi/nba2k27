@@ -59,7 +59,7 @@ const INDEX_ROBOTS =
 
 export const SEO = {
   home: {
-    title: 'NBA Hacks 2K27 – Cheats, Tips, Builds & VC Glitches',
+    title: 'NBA 2K27 Cheats | NBA 2K27 Cheat Auto Green, ESP & Hacks',
     description:
       'The best NBA 2K27 hacks in one place. Working cheats, VC glitches, badge tips, best builds, shooting and dribbling secrets. Updated for the latest patch.',
     path: '/',
@@ -111,7 +111,7 @@ export const SEO = {
     robots: INDEX_ROBOTS,
   },
   product: {
-    title: 'Buy NBA 2K27 Cheats 2026 | Price $35 — Auto Green, ESP, Radar',
+    title: 'NBA 2K27 Cheats 2026 | Price $35 — Auto Green, ESP, Radar',
     description:
       'NBA 2K27 cheats checkout — undetected Auto Green, Court Vision ESP, MyTeam card overlay, Park/Rec court radar, HWID spoofer, stream-proof mode. Confirm 2K Anti-Cheat status, then buy from $35.',
     path: '/nba2k27-cheats',

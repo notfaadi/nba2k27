@@ -20,6 +20,12 @@
 /terms-of-service /terms       301
 /terms-of-service/ /terms      301
 
+# Legacy clone routes → product
+/tarkov-cheats     /nba2k27-cheats   301
+/tarkov-cheats/    /nba2k27-cheats   301
+/dayz-cheats       /nba2k27-cheats   301
+/dayz-cheats/      /nba2k27-cheats   301
+
 # Primary SEO keyword variants → product or home
 /nba2k27-hacks     /nba2k27-cheats   301
 /nba2k27-hacks/    /nba2k27-cheats   301
