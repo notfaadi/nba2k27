@@ -9,10 +9,16 @@ compatibility_date = "2026-09-12"
 [build]
 command = "npm run build"
 
-# Serve on *.workers.dev until you attach a real zone in the dashboard
-# (Workers & Pages → nba2k27 → Settings → Domains & Routes).
-# Do not put localhost or unproxied hostnames in [[routes]] — deploy will fail.
 workers_dev = true
+
+# Apex + www on Cloudflare zone (www → apex 301 in workers/site.js)
+[[routes]]
+pattern = "nba2k27hack.org"
+custom_domain = true
+
+[[routes]]
+pattern = "www.nba2k27hack.org"
+custom_domain = true
 
 [assets]
 directory = "./dist"

@@ -32,4 +32,4 @@ Allow: /videos/
 Disallow: /404
 Disallow: /404.html
 
-Sitemap: http://localhost:5174/sitemap.xml
+Sitemap: https://nba2k27hack.org/sitemap.xml

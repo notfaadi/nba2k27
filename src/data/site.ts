@@ -2,14 +2,18 @@
 import { GLOBAL_KEYWORDS } from './keywords'
 import { PAGE_OG } from './og'
 
-export const SITE_URL = 'http://localhost:5174'
+const CANONICAL_SITE = 'https://nba2k27hack.org'
+const DEV_SITE = 'http://localhost:5174'
+
+/** Production: HTTPS apex. Local dev: Astro on :5174. */
+export const SITE_URL = import.meta.env.DEV ? DEV_SITE : CANONICAL_SITE
 export const SITE_NAME = 'NBA Hacks 2K27'
-export const SITE_HOST = 'localhost:5174'
+export const SITE_HOST = import.meta.env.DEV ? 'localhost:5174' : 'nba2k27hack.org'
 
 /**
  * Sole purpose — used in schema + about copy.
  * Single-product site: NBA 2K27 / NBA 2K27 cheats for PC (worldwide).
- * Canonical host is apex http://localhost:5174 (www 301s to apex in the Worker).
+ * Canonical host is apex https://nba2k27hack.org (www 301s to apex in the Worker).
  */
 export const SITE_PURPOSE =
   'Buy NBA 2K27 cheats for NBA 2K27 on Windows PC — Auto Green & perfect shot timing, player and MyTeam card & badge overlay, player highlight, court radar and live 2K Anti-Cheat status with instant digital delivery.'

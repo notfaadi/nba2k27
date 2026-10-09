@@ -20,10 +20,10 @@ export const POLICY_PAGES: PolicyPageContent[] = [
     path: '/privacy',
     title: 'Privacy Policy | NBA 2K27 Cheats PC',
     description:
-      'How localhost:5174 handles order details, delivery email, support messages and basic site analytics for NBA 2K27 cheats.',
+      'How nba2k27hack.org handles order details, delivery email, support messages and basic site analytics for NBA 2K27 cheats.',
     h1: 'NBA 2K27 Cheats Privacy Policy',
     intro:
-      'This page explains what we collect when you browse localhost:5174, buy a NBA 2K27 Cheats license, or contact support — and what we do not collect.',
+      'This page explains what we collect when you browse nba2k27hack.org, buy a NBA 2K27 Cheats license, or contact support — and what we do not collect.',
     sections: [
       {
         heading: 'What we collect',
@@ -45,8 +45,8 @@ export const POLICY_PAGES: PolicyPageContent[] = [
         heading: 'Cookies and third parties',
         body: [
           'Essential cookies may be set by checkout or CDN providers so payment and delivery work.',
-          'Preview media is hosted on localhost:5174. Third-party embeds are not used for the main product preview.',
-          'Official NBA 2K27 and 2K Sports links are external. Their privacy policies apply once you leave localhost:5174.',
+          'Preview media is hosted on nba2k27hack.org. Third-party embeds are not used for the main product preview.',
+          'Official NBA 2K27 and 2K Sports links are external. Their privacy policies apply once you leave nba2k27hack.org.',
         ],
       },
       {
@@ -68,7 +68,7 @@ export const POLICY_PAGES: PolicyPageContent[] = [
     path: '/terms',
     title: 'Terms of Use | NBA 2K27 Cheats PC',
     description:
-      'License rules, age limits, 2K Anti-Cheat risk, and liability limits for NBA 2K27 cheats on localhost:5174.',
+      'License rules, age limits, 2K Anti-Cheat risk, and liability limits for NBA 2K27 cheats on nba2k27hack.org.',
     h1: 'NBA 2K27 Cheats Terms of Use',
     intro:
       'Buying or running NBA 2K27 Cheats means you accept these terms. A license covers personal use of Auto Green, ESP, player highlight, MyTeam card & badge overlay and radar tools for NBA 2K27 on Windows PC — nothing beyond that.',
@@ -115,7 +115,7 @@ export const POLICY_PAGES: PolicyPageContent[] = [
     path: '/refunds',
     title: 'Refund Policy | NBA 2K27 Cheats PC',
     description:
-      'When NBA 2K27 Cheats refunds apply for digital NBA 2K27 licenses, delivery failures, and Updating status windows on localhost:5174.',
+      'When NBA 2K27 Cheats refunds apply for digital NBA 2K27 licenses, delivery failures, and Updating status windows on nba2k27hack.org.',
     h1: 'NBA 2K27 Cheats Refund Policy',
     intro:
       'NBA 2K27 Cheats licenses are digital goods. This page covers when we can refund, when we cannot, and how to open a request with your order ID.',

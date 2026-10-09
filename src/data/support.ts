@@ -9,7 +9,7 @@ export type SupportFaq = {
 }
 
 export const SUPPORT_INTRO =
-  'Support for NBA 2K27 Cheats buyers on localhost:5174 — loader setup, 2K Anti-Cheat status, menu config and delivery help after you purchase NBA 2K27 cheats.'
+  'Support for NBA 2K27 Cheats buyers on nba2k27hack.org — loader setup, 2K Anti-Cheat status, menu config and delivery help after you purchase NBA 2K27 cheats.'
 
 export const SUPPORT_TOPICS: SupportTopic[] = [
   {
@@ -44,7 +44,7 @@ export const SUPPORT_TOPICS: SupportTopic[] = [
 export const SUPPORT_FAQS: SupportFaq[] = [
   {
     q: 'How do I contact NBA 2K27 Cheats support?',
-    a: 'Open your order on localhost:5174 and use the checkout support channel tied to your purchase. Include a status screenshot (clear to load / Updating) and whether you need load, menu or delivery help.',
+    a: 'Open your order on nba2k27hack.org and use the checkout support channel tied to your purchase. Include a status screenshot (clear to load / Updating) and whether you need load, menu or delivery help.',
   },
   {
     q: 'The loader will not open — what first?',
@@ -60,6 +60,6 @@ export const SUPPORT_FAQS: SupportFaq[] = [
   },
   {
     q: 'Where is my delivery?',
-    a: 'Delivery is digital after checkout on localhost:5174. Use only that loader link. Third-party mirrors are unsupported and unsafe.',
+    a: 'Delivery is digital after checkout on nba2k27hack.org. Use only that loader link. Third-party mirrors are unsupported and unsafe.',
   },
 ]

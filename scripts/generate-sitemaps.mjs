@@ -5,12 +5,14 @@
 import { existsSync, readFileSync, readdirSync, unlinkSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { CANONICAL_HOST, CANONICAL_SITE } from './canonical-site.mjs'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const publicDir = join(root, 'public')
 const dataDir = join(root, 'src', 'data')
 const pagesDir = join(root, 'src', 'pages')
-const SITE = (process.env.SITE_URL || 'http://localhost:5174').replace(/\/$/, '')
+
+const SITE = CANONICAL_SITE
 const TODAY = new Date().toLocaleDateString('en-CA')
 const HREFLANG = [
   'en',
@@ -198,7 +200,7 @@ function imagesForPath(path, games, forums) {
       {
         src: '/og/home.jpg',
         title: 'NBA 2K27 Cheats Open Graph',
-        caption: 'Google and social preview image for localhost:5174 homepage.',
+        caption: `Google and social preview image for ${CANONICAL_HOST} homepage.`,
       },
       {
         src: HERO_FULL,
@@ -218,7 +220,7 @@ function imagesForPath(path, games, forums) {
       {
         src: OG_DEFAULT,
         title: 'NBA 2K27 Cheats Product Social Preview',
-        caption: 'Default Open Graph image for localhost:5174 product pages.',
+        caption: `Default Open Graph image for ${CANONICAL_HOST} product pages.`,
       },
     ]
   }
@@ -283,7 +285,7 @@ function imagesForPath(path, games, forums) {
         title: `${forum?.title || slug} Open Graph`,
         caption:
           forum?.metaDescription ||
-          `Google preview image for ${forum?.title || slug} on localhost:5174.`,
+          `Google preview image for ${forum?.title || slug} on ${CANONICAL_HOST}.`,
       },
       {
         src: FORUM_IMAGES[slug] || MENU,
@@ -327,7 +329,7 @@ function imagesForPath(path, games, forums) {
       {
         src: '/og/privacy.jpg',
         title: 'NBA 2K27 Cheats Privacy Policy',
-        caption: 'Privacy policy preview for localhost:5174 orders and support.',
+        caption: `Privacy policy preview for ${CANONICAL_HOST} orders and support.`,
       },
     ]
   }
@@ -474,8 +476,8 @@ function validate(games, forums, allPaths, sitemap) {
   if (/Tarkov|tarkovcheats|EFT Reaper|Warzone|warzonecheats|Ricochet/i.test(sitemap)) {
     errors.push('Sitemap still contains legacy Tarkov/Warzone labels')
   }
-  if (!sitemap.includes('localhost:5174')) {
-    errors.push('Sitemap must target localhost:5174')
+  if (!sitemap.includes(CANONICAL_HOST)) {
+    errors.push(`Sitemap must target ${CANONICAL_HOST}`)
   }
   if (/tarkovcheats|warzonecheats|wardogshacks|theisle/i.test(sitemap)) {
     errors.push('Sitemap contains a non-NBA 2K27 domain')

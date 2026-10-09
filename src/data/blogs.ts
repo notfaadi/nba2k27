@@ -27,10 +27,10 @@ export const BLOGS: BlogPost[] = [
     slug: 'features-list',
     title: 'NBA 2K27 Cheat Features Checklist',
     excerpt:
-      'Checklist of every NBA 2K27 cheat module on localhost:5174 — perfect shot timing, Court Vision player overlay, MyTeam card & badge overlay, player highlight, court radar and spoofer — before you open checkout from $35.',
+      'Checklist of every NBA 2K27 cheat module on nba2k27hack.org — perfect shot timing, Court Vision player overlay, MyTeam card & badge overlay, player highlight, court radar and spoofer — before you open checkout from $35.',
     metaTitle: 'NBA 2K27 Cheat Features Checklist | Auto Green ESP Radar',
     metaDescription:
-      'NBA 2K27 cheat features checklist: Auto Green & perfect shot timing, Court Vision player overlay, MyTeam card & badge overlay, player highlight, court radar and spoofer on localhost:5174 from $35. Compare modules before you buy.',
+      'NBA 2K27 cheat features checklist: Auto Green & perfect shot timing, Court Vision player overlay, MyTeam card & badge overlay, player highlight, court radar and spoofer on nba2k27hack.org from $35. Compare modules before you buy.',
     searchTerms: 'nba 2k27 cheat features checklist nba 2k27 cheats auto green esp player highlight court radar',
     date: '2026-09-17',
     readMinutes: 8,
@@ -40,7 +40,7 @@ export const BLOGS: BlogPost[] = [
         heading: 'Use this checklist before checkout',
         body: [
           'Searching “nba 2k27 cheats” or “nba 2k27 cheat” usually means one question: what is actually included? This guide is the module checklist — not the price page. Open Product details for live 2K Anti-Cheat status and checkout from $35.',
-          'NBA 2K27 Cheats on localhost:5174 is a single NBA 2K27 product for Windows PC: one loader, one license, clear-to-load or Updating against 2K Anti-Cheat. Official and many modded private Pro-Am lobbys are supported when the build allows it.',
+          'NBA 2K27 Cheats on nba2k27hack.org is a single NBA 2K27 product for Windows PC: one loader, one license, clear-to-load or Updating against 2K Anti-Cheat. Official and many modded private Pro-Am lobbys are supported when the build allows it.',
         ],
       },
       {
@@ -115,7 +115,7 @@ export const BLOGS: BlogPost[] = [
         heading: 'Save loot-run and PvP configs',
         body: [
           'For quiet gearing, keep Auto Green mild or off and lean on Court Vision player overlay, MyTeam card & badge overlay and radar. For contested military loot, add slight assist without snap behaviour.',
-          'Save a “MyCareer grind” and a “PvP” config. Licenses for NBA 2K27 cheats start from $35 on localhost:5174.',
+          'Save a “MyCareer grind” and a “PvP” config. Licenses for NBA 2K27 cheats start from $35 on nba2k27hack.org.',
         ],
       },
     ],
@@ -217,7 +217,7 @@ export const BLOGS: BlogPost[] = [
       {
         heading: 'After a clean load',
         body: [
-          'Buy NBA 2K27 Cheats on localhost:5174 (from $35), confirm live 2K Anti-Cheat status, launch NBA 2K27, run the loader, then open the menu with the key in your delivery notes.',
+          'Buy NBA 2K27 Cheats on nba2k27hack.org (from $35), confirm live 2K Anti-Cheat status, launch NBA 2K27, run the loader, then open the menu with the key in your delivery notes.',
           'If the menu does not open, do not spam keys — contact support with your order ID.',
         ],
       },
@@ -253,7 +253,7 @@ export const BLOGS: BlogPost[] = [
       {
         heading: '1) Buy and confirm status',
         body: [
-          'Open localhost:5174. If status is Updating after a 2K Anti-Cheat patch, wait. If status is clear, checkout from $35 and use only the official delivery link.',
+          'Open nba2k27hack.org. If status is Updating after a 2K Anti-Cheat patch, wait. If status is clear, checkout from $35 and use only the official delivery link.',
         ],
       },
       {
@@ -332,7 +332,7 @@ export const BLOGS: BlogPost[] = [
       {
         heading: 'Why loaders get flagged',
         body: [
-          'Cheat loaders often trip generic heuristics even from a legitimate localhost:5174 purchase. Exclusion comes before you spam launch into NBA 2K27.',
+          'Cheat loaders often trip generic heuristics even from a legitimate nba2k27hack.org purchase. Exclusion comes before you spam launch into NBA 2K27.',
         ],
       },
       {
@@ -401,7 +401,7 @@ export const BLOGS: BlogPost[] = [
       {
         heading: 'Status is part of the product',
         body: [
-          '2K Anti-Cheat updates can invalidate a build overnight. localhost:5174 shows clear-to-load or Updating so you are not buying a dead loader from a Discord screenshot.',
+          '2K Anti-Cheat updates can invalidate a build overnight. nba2k27hack.org shows clear-to-load or Updating so you are not buying a dead loader from a Discord screenshot.',
           'Licenses start from $35 — honest status beats fake always-safe marketing against 2K Anti-Cheat.',
         ],
       },
@@ -519,7 +519,7 @@ export const BLOGS: BlogPost[] = [
         heading: 'Common fixes',
         body: [
           'Restore quarantined files, confirm folder exclusion, close overlays, reboot once, then try one clean load with NBA 2K27 running from the official launcher.',
-          'Do not run random “fix DLL” downloads elsewhere — support only covers official delivery from localhost:5174.',
+          'Do not run random “fix DLL” downloads elsewhere — support only covers official delivery from nba2k27hack.org.',
         ],
       },
       {

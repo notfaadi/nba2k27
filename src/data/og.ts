@@ -1,6 +1,6 @@
 /**
  * Canonical 1200x630 JPEG Open Graph images for Google SERP thumbnails.
- * Every indexed URL maps to a unique crawlable /og/*.jpg under localhost:5174.
+ * Every indexed URL maps to a unique crawlable /og/*.jpg under nba2k27hack.org.
  */
 
 export const OG_HOME = '/og/home.jpg'

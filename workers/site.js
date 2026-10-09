@@ -68,13 +68,7 @@ export default {
     if (!headers.has('Strict-Transport-Security')) {
       headers.set('Strict-Transport-Security', 'max-age=31536000; includeSubDomains; preload')
     }
-    const contentType = headers.get('content-type') || ''
-    if (contentType.includes('text/html')) {
-      const canonical = `https://${url.hostname}${url.pathname === '/' ? '/' : url.pathname.replace(/\/$/, '') || '/'}`
-      const existing = headers.get('Link')
-      const linkCanonical = `<${canonical}>; rel="canonical"`
-      headers.set('Link', existing ? `${existing}, ${linkCanonical}` : linkCanonical)
-    }
+    // Canonical + hreflang live only in HTML <head> — avoid duplicate Link headers.
     return new Response(response.body, {
       status: response.status,
       statusText: response.statusText,

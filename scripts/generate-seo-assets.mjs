@@ -72,7 +72,7 @@ function overlaySvg(width, height, eyebrow, title, subtitle) {
         )
         .join('\n')}
       <text x="64" y="480" fill="#c9bdd2" font-size="26" font-family="Arial, sans-serif">${escapeXml(subtitle)}</text>
-      <text x="64" y="560" fill="#9299a3" font-size="20" font-family="Arial, sans-serif">localhost:5174</text>
+      <text x="64" y="560" fill="#9299a3" font-size="20" font-family="Arial, sans-serif">nba2k27hack.org</text>
     </svg>
   `)
 }
@@ -159,7 +159,7 @@ const staticOg = [
     source: heroFull,
     eyebrow: 'POLICY',
     title: 'Privacy Policy',
-    subtitle: 'How localhost:5174 handles order data',
+    subtitle: 'How nba2k27hack.org handles order data',
   },
   {
     file: 'terms.jpg',
@@ -193,7 +193,7 @@ if (!forums.length) {
     forums.push({
       slug,
       title: `NBA 2K27 Cheats ${slug}`,
-      description: 'NBA 2K27 cheats guide on localhost:5174',
+      description: 'NBA 2K27 cheats guide on nba2k27hack.org',
     })
   }
 }
@@ -212,7 +212,7 @@ for (const forum of forums) {
     source,
     'DAYZ GUIDE',
     forum.title.replace(/\s*\|\s*.*$/, '').slice(0, 48),
-    'NBA 2K27 cheats · localhost:5174',
+    'NBA 2K27 cheats · nba2k27hack.org',
   )
   created.push(file)
 }
@@ -238,7 +238,7 @@ function fillerSvg(width, height, eyebrow, title, subtitle) {
 for (const [name, eyebrow, title, subtitle] of [
   ['nba2k27-tactical-art.jpg', 'NBA 2K27', 'NBA 2K27 Cheats', 'Auto Green · ESP · MyTeam card & badge overlay · 2K Anti-Cheat'],
   ['nba2k27-control-art.jpg', 'NBA 2K27 · WINDOWS PC', 'NBA 2K27 Court Vision & Radar', 'Built for NBA 2K27 survival runs'],
-  ['nba2k27-home-art.jpg', 'localhost:5174', 'NBA 2K27 Cheats', 'Auto Green, ESP, player highlight and court radar'],
+  ['nba2k27-home-art.jpg', 'nba2k27hack.org', 'NBA 2K27 Cheats', 'Auto Green, ESP, player highlight and court radar'],
 ]) {
   const path = join(mediaDir, name)
   if (

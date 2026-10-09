@@ -7,15 +7,15 @@
 export const SITE_FAQS: FaqItem[] = [
   {
     q: 'What are NBA 2K27 Cheats?',
-    a: 'NBA 2K27 Cheats are NBA 2K27 tools on localhost:5174 — Auto Green & perfect shot timing, Court Vision player overlay, player highlight, defenders and MyTeam card & badge overlay, and a 2D court radar — with live 2K Anti-Cheat status after game patches.',
+    a: 'NBA 2K27 Cheats are NBA 2K27 tools on nba2k27hack.org — Auto Green & perfect shot timing, Court Vision player overlay, player highlight, defenders and MyTeam card & badge overlay, and a 2D court radar — with live 2K Anti-Cheat status after game patches.',
   },
   {
     q: 'How much do NBA 2K27 cheats cost?',
-    a: `NBA 2K27 cheats start from $35 for short access. Longer licenses cost more. Always confirm live 2K Anti-Cheat status and the price on localhost:5174 before checkout.`,
+    a: `NBA 2K27 cheats start from $35 for short access. Longer licenses cost more. Always confirm live 2K Anti-Cheat status and the price on nba2k27hack.org before checkout.`,
   },
   {
     q: 'Do you sell NBA 2K27 hacks for other games?',
-    a: 'No. localhost:5174 sells NBA 2K27 cheats / NBA 2K27 hacks only — one product, no multi-game catalog.',
+    a: 'No. nba2k27hack.org sells NBA 2K27 cheats / NBA 2K27 hacks only — one product, no multi-game catalog.',
   },
   {
     q: 'Is Auto Green the main feature?',
@@ -23,7 +23,7 @@ export const SITE_FAQS: FaqItem[] = [
   },
   {
     q: 'How do you handle 2K Anti-Cheat updates?',
-    a: 'We publish live clear-to-load or Updating labels after NBA 2K27 and 2K Anti-Cheat patches. Always check status on localhost:5174 before you load.',
+    a: 'We publish live clear-to-load or Updating labels after NBA 2K27 and 2K Anti-Cheat patches. Always check status on nba2k27hack.org before you load.',
   },
   {
     q: 'What is NBA 2K27 Court Vision / player highlight?',

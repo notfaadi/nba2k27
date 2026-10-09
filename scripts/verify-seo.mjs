@@ -1,9 +1,10 @@
 ﻿import { existsSync, readFileSync, readdirSync } from 'node:fs'
 import { join, relative } from 'node:path'
+import { CANONICAL_SITE } from './canonical-site.mjs'
 
 const root = join(import.meta.dirname, '..')
 const dist = join(root, 'dist')
-const site = 'http://localhost:5174'
+const site = CANONICAL_SITE
 const failures = []
 
 function fail(message) {
@@ -35,6 +36,11 @@ for (const file of files) {
   const title = html.match(/<title>(.*?)<\/title>/)?.[1]
   const description = html.match(/<meta name="description" content="([^"]+)"/)?.[1]
   const canonicalUrl = pageUrl(file)
+
+  const canonicalCount = (html.match(/<link rel="canonical"/g) || []).length
+  if (canonicalCount !== 1) {
+    fail(`${page}: expected one canonical link, found ${canonicalCount}`)
+  }
 
   if (h1Count !== 1) fail(`${page}: expected one H1, found ${h1Count}`)
   if (!title) fail(`${page}: missing title`)
@@ -99,7 +105,7 @@ for (const [name, html] of [
   ['product', product],
   ['reviews', reviews],
 ]) {
-  if (!html.includes('"@id":"http://localhost:5174/#product"')) {
+  if (!html.includes(`"@id":"${site}/#product"`)) {
     fail(`${name}: missing shared Product ID`)
   }
 }
@@ -137,8 +143,8 @@ for (const file of files) {
   const twImage = html.match(/<meta name="twitter:image" content="([^"]+)"/)?.[1]
   const robotsMeta = html.match(/<meta name="robots" content="([^"]+)"/)?.[1]
 
-  if (!ogImage?.startsWith('http://localhost:5174/og/') || !ogImage.endsWith('.jpg')) {
-    fail(`${page}: og:image must be http://localhost:5174/og/*.jpg for SERP thumbnails`)
+  if (!ogImage?.startsWith(`${site}/og/`) || !ogImage.endsWith('.jpg')) {
+    fail(`${page}: og:image must be ${site}/og/*.jpg for SERP thumbnails`)
   }
   if (!twImage || twImage !== ogImage) {
     fail(`${page}: twitter:image must match og:image`)
@@ -193,8 +199,8 @@ if (
 const sitemap = readFileSync(join(dist, 'sitemap.xml'), 'utf8')
 if (sitemap.includes('<sitemapindex')) fail('sitemap.xml must be a single urlset, not an index')
 if (/forums\/(instructions|how-to-load)/.test(sitemap)) fail('Retired forum remains in sitemap.xml')
-if (!sitemap.includes('http://localhost:5174/')) {
-  fail('sitemap.xml must use http://localhost:5174 URLs')
+if (!sitemap.includes(`${site}/`)) {
+  fail(`sitemap.xml must use ${site} URLs`)
 }
 if (!sitemap.includes('/videos/nba2k27-preview.mp4')) {
   fail('sitemap.xml missing NBA 2K27 preview video entry')
@@ -276,7 +282,7 @@ if (!existsSync(join(dist, 'robots.txt'))) fail('dist/robots.txt is missing')
 if (!existsSync(join(dist, '_routes.json'))) fail('dist/_routes.json is missing')
 
 const robots = readFileSync(join(dist, 'robots.txt'), 'utf8')
-if (!robots.includes('Sitemap: http://localhost:5174/sitemap.xml')) {
+if (!robots.includes(`Sitemap: ${site}/sitemap.xml`)) {
   fail('robots.txt must point at the canonical HTTPS sitemap')
 }
 if (!robots.includes('Allow: /sitemap.xml')) {
